@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Anonymous Hope</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Add Post</string>
+    <string name="title_notifications">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_edit">Update profile</string>
+</resources>

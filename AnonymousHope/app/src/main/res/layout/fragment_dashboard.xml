@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@color/purple_700"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/MenuStyle">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/addPhoto"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:background="@color/purple_700"
+                android:src="@drawable/ic_baseline_add_a_photo_24" />
+
+            <ImageButton
+                android:id="@+id/addVideo"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/addPhoto"
+                android:background="@color/purple_700"
+                android:src="@drawable/ic_baseline_videocam_24" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnPostEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@color/purple_700"
+                android:text="POST "
+                android:textSize="16dp" />
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/addEventContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textbar"
+        android:hint="Space to write.. "
+        android:padding="10dp"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:layout_margin="6dp"
+        android:textSize="20dp" />
+    <ProgressBar
+        android:id="@+id/addProgressBar"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/showEventImage"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="15dp"
+        android:visibility="gone"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_baseline_add_a_photo_24"
+        android:layout_height="wrap_content"/>
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:layout_height="200dp"/>
+</LinearLayout>
